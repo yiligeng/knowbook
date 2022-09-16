@@ -12,7 +12,7 @@
 
 <!-- 图片插入示例 -->
 
-![示例图片](示例图片.jpeg)
+![示例图片](./示例图片.jpeg)
 
 <!-- 在这里简单介绍你的知识领域、特点、需掌握的前提软硬件知识。 -->
 
@@ -39,7 +39,7 @@
 (插图示例)
 
 <table><tr><td>
-<img src="The-5-Best-Ways-to-Become-a-DJ-.jpg" />
+<img src="./The-5-Best-Ways-to-Become-a-DJ-.jpg" />
 </td></tr></table>
 
 
