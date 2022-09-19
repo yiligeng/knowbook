@@ -1,0 +1,387 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.1. 微服务的概念 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="microservice.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    1. Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../Template/template.html">
+            
+                <a href="../../../Template/template.html">
+            
+                    
+                    2. Template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../vpn/vpn.html">
+            
+                <a href="../vpn/vpn.html">
+            
+                    
+                    3. VPN
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../vpn/01_内网互通示意图.html">
+            
+                <a href="../vpn/01_内网互通示意图.html">
+            
+                    
+                    3.1. 内网互通示意图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../vpn/02_内网vpn最佳实践.html">
+            
+                <a href="../vpn/02_内网vpn最佳实践.html">
+            
+                    
+                    3.2. 办公内网与阿里云VPC互通最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="microservice.html">
+            
+                <a href="microservice.html">
+            
+                    
+                    4. Microservice
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="01_微服务的概念.html">
+            
+                <a href="01_微服务的概念.html">
+            
+                    
+                    4.1. 微服务的概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >4.1. 微服务的概念</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="1-&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x4E0E;&#x8D77;&#x6E90;">1. &#x57FA;&#x672C;&#x6982;&#x5FF5;&#x4E0E;&#x8D77;&#x6E90;</h3>
+<p>&#x57FA;&#x672C;&#x6982;&#x5FF5;</p>
+<pre><code>&#x5FAE;&#x670D;&#x52A1;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;: &#x662F;&#x4E00;&#x79CD;SOA(&#x9762;&#x5411;&#x670D;&#x52A1;&#x7684;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;)&#x7ED3;&#x6784;&#x98CE;&#x683C;&#x7684;&#x53D8;&#x4F53;, &#x5C06;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5B89;&#x6392;&#x4E3A;&#x677E;&#x6563;&#x8026;&#x5408;&#x670D;&#x52A1;&#x7684;&#x96C6;&#x5408;&#x3002;
+&#x5728;&#x5FAE;&#x670D;&#x52A1;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x4E2D;&#xFF0C;&#x670D;&#x52A1;&#x662F;&#x7EC6;&#x7C92;&#x5EA6;&#x7684;&#xFF0C;&#x534F;&#x8BAE;&#x662F;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x3002;&#x76EE;&#x6807;&#x662F;&#x56E2;&#x961F;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x4E8E;&#x4ED6;&#x4EBA;&#x5C06;&#x4ED6;&#x4EEC;&#x7684;&#x670D;&#x52A1;&#x5E26;&#x5165;&#x751F;&#x6D3B;&#x3002;
+&#x677E;&#x6563;&#x8026;&#x5408;&#x51CF;&#x5C11;&#x4E86;&#x6240;&#x6709;&#x7C7B;&#x578B;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x53CA;&#x5176;&#x5468;&#x56F4;&#x7684;&#x590D;&#x6742;&#x6027;&#xFF0C;&#x56E0;&#x4E3A;&#x670D;&#x52A1;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E0D;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x670D;&#x52A1;&#x7684;&#x7528;&#x6237;&#xFF0C;
+&#x4ED6;&#x4EEC;&#x4E0D;&#x4F1A;&#x5F3A;&#x5236;&#x670D;&#x52A1;&#x7684;&#x7528;&#x6237;&#x505A;&#x51FA;&#x66F4;&#x6539;
+</code></pre><p>&#x8D77;&#x6E90;</p>
+<pre><code>2005, Peter Rodgers introduced the term &quot;Micro-Web-Services&quot; during a presentation at the Web Services Edge conference
+2014, Martin Fowler, James Lewis  describes a microservices-based architecture as having the following properties
+</code></pre><p><a href="https://martinfowler.com/bliki/MicroservicePrerequisites.html" target="_blank">&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x5148;&#x51B3;&#x6761;&#x4EF6;</a></p>
+<pre><code>1. Rapid provisioning &#x5FEB;&#x901F;&#x7684;&#x914D;&#x7F6E;&#x80FD;&#x529B;
+2. Basic Monitoring &#x57FA;&#x672C;&#x7684;&#x76D1;&#x63A7;&#x548C;&#x56DE;&#x6EDA;&#x7684;&#x80FD;&#x529B;
+3. Rapid application deployment &#x5FEB;&#x901F;&#x7684;&#x5E94;&#x7528;&#x90E8;&#x7F72;&#x80FD;&#x529B;
+</code></pre><p><a href="https://martinfowler.com/articles/microservices.html" target="_blank">&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x7279;&#x70B9;</a></p>
+<pre><code>1. Componentization via Services &#x7EC4;&#x4EF6;&#x5316;&#x7684;&#x670D;&#x52A1;(&#x628A;&#x670D;&#x52A1;&#x5F53;&#x6210;&#x7EC4;&#x4EF6;):  
+    &#x7EC4;&#x4EF6;&#x7684;&#x6982;&#x5FF5;: &#x53EF;&#x72EC;&#x7ACB;&#x66FF;&#x6362;&#x548C;&#x5347;&#x7EA7;&#x7684;&#x8F6F;&#x4EF6;&#x5355;&#x5143;
+    &#x539F;&#x56E0;&#x4E00;: &#x670D;&#x52A1;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x7684;&#x90E8;&#x7F72;
+    &#x539F;&#x56E0;&#x4E8C;: &#x66F4;&#x597D;&#x7684;&#x7EC4;&#x4EF6;&#x63A5;&#x53E3;, &#x7EC4;&#x4EF6;&#x53D1;&#x5E03;&#x63A5;&#x53E3;
+2. Organized around Business Capabilities &#x56F4;&#x7ED5;&#x7740;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x7684;&#x7EC4;&#x7EC7;&#x6765;&#x5206;&#x5272;&#x670D;&#x52A1;:
+    &#x73B0;&#x72B6;: Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization&apos;s communication structure.
+            -- Melvin Conway, 1968
+3. Products not Projects &#x4EA7;&#x54C1;&#x800C;&#x4E0D;&#x662F;&#x9879;&#x76EE;: &#x56E2;&#x961F;&#x5E94;&#x5F53;&#x5BF9;&#x6574;&#x4E2A;&#x4EA7;&#x54C1;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x8D1F;&#x8D23;
+    &#x4EA7;&#x54C1;&#x7684;&#x6982;&#x5FF5;: &#x4E00;&#x4E2A;&#x4EA7;&#x54C1;&#x662F;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x88AB;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x7684;&#x8F6F;&#x4EF6;&#x7CFB;&#x7EDF;, &#x4E00;&#x4E2A;&#x4EA7;&#x54C1;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x670D;&#x52A1;
+    &#x9879;&#x76EE;&#x7684;&#x6982;&#x5FF5;: &#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x662F;&#x4E00;&#x4E2A;&#x56E2;&#x961F;&#x4E3A;&#x4E86;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x529F;&#x80FD;&#x800C;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x4EFB;&#x52A1;&#x7684;&#x96C6;&#x5408;
+    &#x9879;&#x76EE;&#x7684;&#x7279;&#x70B9;: &#x9879;&#x76EE;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x662F;&#x77ED;&#x6682;&#x7684;, &#x9879;&#x76EE;&#x7684;&#x76EE;&#x6807;&#x662F;&#x4E3A;&#x4E86;&#x5B8C;&#x6210;&#x4E00;&#x6B21;&#x6027;&#x7684;&#x4EFB;&#x52A1;
+    &#x4EA7;&#x54C1;&#x7684;&#x7279;&#x70B9;: &#x4EA7;&#x54C1;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x662F;&#x957F;&#x671F;&#x7684;, &#x4EA7;&#x54C1;&#x7684;&#x76EE;&#x6807;&#x662F;&#x4E3A;&#x4E86;&#x6EE1;&#x8DB3;&#x5BA2;&#x6237;&#x7684;&#x9700;&#x6C42;
+    &#x539F;&#x56E0;: &#x9879;&#x76EE;&#x7684;&#x7279;&#x70B9;&#x4F1A;&#x5BFC;&#x81F4;&#x9879;&#x76EE;&#x7684;&#x529F;&#x80FD;&#x4F1A;&#x88AB;&#x9650;&#x5236;&#x5728;&#x4E00;&#x6B21;&#x6027;&#x7684;&#x4EFB;&#x52A1;&#x4E0A;, &#x9879;&#x76EE;&#x7684;&#x529F;&#x80FD;&#x5F88;&#x96BE;&#x88AB;&#x590D;&#x7528;
+4. Smart endpoints and dumb pipes &#x667A;&#x80FD;&#x7AEF;&#x70B9;&#x548C;&#x611A;&#x8822;&#x7684;&#x7BA1;&#x9053;:
+    &#x5FAE;&#x670D;&#x52A1;&#x7684;&#x5E94;&#x7528;&#x81F4;&#x529B;&#x677E;&#x8026;&#x5408;&#x548C;&#x9AD8;&#x5185;&#x805A;
+    &#x667A;&#x80FD;&#x7AEF;&#x70B9;: &#x4E1A;&#x52A1;&#x7684;&#x903B;&#x8F91;&#x53D1;&#x751F;&#x4E8E;&#x7AEF;&#x70B9;&#x4E4B;&#x540E;, &#x5BF9;&#x4E8E;&#x6D88;&#x8D39;&#x8005;&#x4E0D;&#x53EF;&#x89C1;, &#x50CF;&#x4E00;&#x4E2A;&#x9B54;&#x672F;
+    &#x611A;&#x8822;&#x7684;&#x7BA1;&#x9053;: &#x4E0D;&#x505A;&#x590D;&#x6742;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;, &#x53EA;&#x505A;&#x7B80;&#x5355;&#x7684;&#x6570;&#x636E;&#x8F6C;&#x6362;, &#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x88AB;&#x66FF;&#x6362;
+5. Decentralized Governance &#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x6CBB;&#x7406;:
+    &#x670D;&#x52A1;&#x7684;&#x6240;&#x6709;&#x6743;: &#x670D;&#x52A1;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x7531;&#x670D;&#x52A1;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x6765;&#x51B3;&#x5B9A;
+    &#x670D;&#x52A1;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;: &#x670D;&#x52A1;&#x7684;&#x521B;&#x5EFA;, &#x670D;&#x52A1;&#x7684;&#x53D1;&#x5E03;, &#x670D;&#x52A1;&#x7684;&#x5220;&#x9664;
+    &#x539F;&#x56E0;: &#x670D;&#x52A1;&#x7684;&#x6240;&#x6709;&#x6743;&#x53EF;&#x4EE5;&#x8BA9;&#x670D;&#x52A1;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x66F4;&#x597D;&#x7684;&#x7BA1;&#x7406;&#x670D;&#x52A1;
+6. Decentralized Data Management &#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x6570;&#x636E;&#x7BA1;&#x7406;:
+    Bounded Context(&#x9650;&#x754C;&#x4E0A;&#x4E0B;&#x6587;):&#x5BF9;&#x5F85;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x975E;&#x5E38;&#x6709;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x4E3A;Bounded Context&#x7684;&#x9886;&#x57DF;&#x9A71;&#x52A8;&#x8BBE;&#x8BA1;&#x3002;DDD&#x628A;&#x590D;&#x6742;&#x7684;&#x9886;&#x57DF;&#x62C6;&#x5206;&#x6210;&#x4E0D;&#x540C;&#x4E0A;&#x4E0B;&#x6587;&#x8FB9;&#x754C;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;
+    Polyglot Persistence(&#x591A;&#x8A9E;&#x8A00;&#x6301;&#x4E45;&#x6027;): &#x5FAE;&#x670D;&#x52A1;&#x8BA9;&#x6BCF;&#x4E2A;&#x670D;&#x52A1;&#x7BA1;&#x7406;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x5E93;: 
+7. Infrastructure Automation &#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x81EA;&#x52A8;&#x5316;:
+    &#x539F;&#x56E0;: &#x670D;&#x52A1;&#x7684;&#x5FEB;&#x901F;&#x90E8;&#x7F72;&#x9700;&#x8981;&#x57FA;&#x7840;&#x8BBE;&#x65BD;&#x7684;&#x81EA;&#x52A8;&#x5316;
+8. Design for failure &#x5BB9;&#x9519;&#x6027;&#x8BBE;&#x8BA1;:
+    &#x670D;&#x52A1;&#x4F5C;&#x4E3A;&#x7EC4;&#x4EF6;&#x7684;&#x4E00;&#x4E2A;&#x7ED3;&#x679C;&#x5728;&#x4E8E;&#x5E94;&#x7528;&#x9700;&#x8981;&#x6709;&#x80FD;&#x5BB9;&#x5FCD;&#x670D;&#x52A1;&#x7684;&#x6545;&#x969C;&#x7684;&#x8BBE;&#x8BA1;
+9. Evolutionary Design &#x8FED;&#x4EE3;&#x5F0F;&#x8BBE;&#x8BA1;:
+    &#x670D;&#x52A1;&#x7684;&#x8BBE;&#x8BA1;&#x5E94;&#x5F53;&#x662F;&#x8FED;&#x4EE3;&#x5F0F;&#x7684;, &#x62A5;&#x5E9F;, &#x4E0D;&#x662F;&#x957F;&#x671F;&#x53D1;&#x5C55;
+</code></pre><p><a href="https://martinfowler.com/articles/microservices.html" target="_blank">&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x4F18;&#x70B9;</a></p>
+<h3 id="2-&#x5176;&#x4ED6;&#x4F18;&#x79C0;&#x8865;&#x5145;">2. &#x5176;&#x4ED6;&#x4F18;&#x79C0;&#x8865;&#x5145;</h3>
+<p><a href="https://philcalcado.com/2017/06/11/calcados_microservices_prerequisites.html" target="_blank">&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x5148;&#x51B3;&#x6761;&#x4EF6;</a></p>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="microservice.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 4. Microservice">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.1. 微服务的概念","level":"1.4.1","depth":2,"previous":{"title":"4. Microservice","level":"1.4","depth":1,"path":"docs/book/microservice/microservice.md","ref":"docs/book/microservice/microservice.md","articles":[{"title":"4.1. 微服务的概念","level":"1.4.1","depth":2,"path":"docs/book/microservice/01_微服务的概念.md","ref":"docs/book/microservice/01_微服务的概念.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["chapter-fold","-lunr","-search","search-pro","code","insert-logo","pageview-count","popup"],"pluginsConfig":{"chapter-fold":{},"search-pro":{},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 40px; min-height: 40px","url":"https://s1.ax1x.com/2022/09/16/vzRa9g.jpg"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/book/microservice/01_微服务的概念.md","mtime":"2022-09-19T06:07:18.651Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-19T06:07:26.630Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
